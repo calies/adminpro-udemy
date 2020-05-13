@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { PAGES_ROUTES } from './pages.routes';
 
@@ -16,6 +15,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.co
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficaDonaComponent
+    GraficaDonaComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
@@ -35,8 +36,7 @@ import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.co
     SharedModule,
     PAGES_ROUTES,
     FormsModule,
-    ChartsModule,
-    BrowserModule
+    ChartsModule
   ]
 })
 export class PagesModule { }

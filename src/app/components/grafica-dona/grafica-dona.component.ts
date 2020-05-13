@@ -13,7 +13,7 @@ export class GraficaDonaComponent implements OnInit {
   @Input('chartLabels') doughnutChartLabels: Label[] = [];
   @Input('chartData') doughnutChartData: MultiDataSet = [];
   @Input('chartType') doughnutChartType: ChartType = 'doughnut';
-  
+
   constructor() {}
 
   ngOnInit(): void {}
